@@ -1,0 +1,12 @@
+# https://www.robotstxt.org/robotstxt.html
+# HSS Thailand - Hindu Swayamsevak Sangh
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://hss-thailand.org/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

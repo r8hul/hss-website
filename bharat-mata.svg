@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="500" height="600">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E0F6FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#98FB98;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sariGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#DC143C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B0000;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="auraGradient" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:0.2" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Sky Background -->
+  <rect width="500" height="600" fill="url(#skyGradient)"/>
+  
+  <!-- Mountains in background -->
+  <polygon points="0,400 100,300 200,350 300,280 400,320 500,300 500,600 0,600" fill="url(#mountainGradient)" opacity="0.7"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="100" cy="100" rx="30" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="120" cy="95" rx="25" ry="12" fill="white" opacity="0.8"/>
+  <ellipse cx="350" cy="80" rx="35" ry="18" fill="white" opacity="0.8"/>
+  <ellipse cx="370" cy="75" rx="28" ry="14" fill="white" opacity="0.8"/>
+  
+  <!-- Divine Aura -->
+  <ellipse cx="250" cy="180" rx="150" ry="200" fill="url(#auraGradient)"/>
+  
+  <!-- Bharat Mata Figure -->
+  <!-- Head and Face -->
+  <circle cx="250" cy="180" r="40" fill="#FDBCB4" stroke="#D4A574" stroke-width="2"/>
+  
+  <!-- Crown -->
+  <polygon points="220,150 250,130 280,150 275,165 225,165" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+  <circle cx="250" cy="140" r="8" fill="#FF6B35"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="240" cy="175" rx="3" ry="5" fill="#2F4F4F"/>
+  <ellipse cx="260" cy="175" rx="3" ry="5" fill="#2F4F4F"/>
+  
+  <!-- Nose and Mouth -->
+  <path d="M 250 180 L 252 185 L 250 187" stroke="#D4A574" stroke-width="1" fill="none"/>
+  <path d="M 245 190 Q 250 193 255 190" stroke="#D4A574" stroke-width="1" fill="none"/>
+  
+  <!-- Hair -->
+  <path d="M 220 160 Q 210 140 220 120 Q 250 110 280 120 Q 290 140 280 160" fill="#2F4F4F"/>
+  
+  <!-- Body and Sari -->
+  <ellipse cx="250" cy="280" rx="60" ry="80" fill="url(#sariGradient)"/>
+  
+  <!-- Arms -->
+  <ellipse cx="190" cy="250" rx="15" ry="40" fill="#FDBCB4" transform="rotate(-20 190 250)"/>
+  <ellipse cx="310" cy="250" rx="15" ry="40" fill="#FDBCB4" transform="rotate(20 310 250)"/>
+  
+  <!-- Hands -->
+  <circle cx="180" cy="280" r="12" fill="#FDBCB4"/>
+  <circle cx="320" cy="280" r="12" fill="#FDBCB4"/>
+  
+  <!-- Flag in right hand -->
+  <rect x="315" y="200" width="3" height="80" fill="#8B4513"/>
+  <rect x="318" y="200" width="40" height="25" fill="#FF9933"/>
+  <rect x="318" y="225" width="40" height="25" fill="white"/>
+  <rect x="318" y="250" width="40" height="25" fill="#138808"/>
+  
+  <!-- Lotus in left hand -->
+  <g transform="translate(180,280)">
+    <ellipse cx="0" cy="0" rx="8" ry="3" fill="#FFB6C1" transform="rotate(0)"/>
+    <ellipse cx="0" cy="0" rx="8" ry="3" fill="#FFB6C1" transform="rotate(45)"/>
+    <ellipse cx="0" cy="0" rx="8" ry="3" fill="#FFB6C1" transform="rotate(90)"/>
+    <ellipse cx="0" cy="0" rx="8" ry="3" fill="#FFB6C1" transform="rotate(135)"/>
+    <circle cx="0" cy="0" r="3" fill="#FFD700"/>
+  </g>
+  
+  <!-- Lion beside her -->
+  <ellipse cx="150" cy="380" rx="40" ry="25" fill="#DAA520"/>
+  <circle cx="130" cy="360" r="20" fill="#DAA520"/>
+  <circle cx="125" cy="355" r="3" fill="#2F4F4F"/>
+  <circle cx="135" cy="355" r="3" fill="#2F4F4F"/>
+  <path d="M 120 365 Q 130 370 140 365" stroke="#8B4513" stroke-width="2" fill="none"/>
+  
+  <!-- Lion's mane -->
+  <circle cx="130" cy="360" r="25" fill="#B8860B" opacity="0.7"/>
+  
+  <!-- Map of India outline (simplified) -->
+  <g transform="translate(200,450) scale(0.8)">
+    <path d="M 50 0 Q 80 10 100 40 Q 120 80 110 120 Q 100 160 80 180 Q 60 200 40 190 Q 20 180 10 160 Q 0 120 5 80 Q 15 40 30 20 Q 40 5 50 0" 
+          fill="#90EE90" stroke="#228B22" stroke-width="2" opacity="0.8"/>
+  </g>
+  
+  <!-- Sacred symbols -->
+  <!-- Om symbol (simplified) -->
+  <g transform="translate(350,150) scale(0.5)">
+    <path d="M 0 20 Q 20 0 40 20 Q 30 40 10 35 Q 0 30 0 20" fill="#FFD700"/>
+    <circle cx="35" cy="15" r="3" fill="#FFD700"/>
+  </g>
+  
+  <!-- Trishul -->
+  <g transform="translate(100,150)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#C0C0C0" stroke-width="3"/>
+    <path d="M -8 0 L 0 -10 L 8 0" stroke="#C0C0C0" stroke-width="2" fill="none"/>
+    <line x1="-6" y1="5" x2="6" y2="5" stroke="#C0C0C0" stroke-width="2"/>
+  </g>
+  
+  <!-- Decorative border elements -->
+  <circle cx="50" cy="50" r="5" fill="#FFD700" opacity="0.6"/>
+  <circle cx="450" cy="50" r="5" fill="#FFD700" opacity="0.6"/>
+  <circle cx="50" cy="550" r="5" fill="#FFD700" opacity="0.6"/>
+  <circle cx="450" cy="550" r="5" fill="#FFD700" opacity="0.6"/>
+  
+  <!-- Rays of light -->
+  <g stroke="#FFD700" stroke-width="2" opacity="0.5">
+    <line x1="250" y1="50" x2="250" y2="80"/>
+    <line x1="280" y1="60" x2="300" y2="75"/>
+    <line x1="300" y1="90" x2="320" y2="100"/>
+    <line x1="220" y1="60" x2="200" y2="75"/>
+    <line x1="200" y1="90" x2="180" y2="100"/>
+  </g>
+</svg>
