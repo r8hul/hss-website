@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HSS Thailand - Activities</title>
+  
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#fffaf3; --accent:#f57c00; --accent-dark:#e65100; --ink:#333; --card:#fff; --muted:#6b7280;
+    --radius:14px; --shadow:0 8px 24px rgba(0,0,0,.08);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);}
+  .container{max-width:1100px;margin:auto;padding:1.75rem 1rem;}
+  header.site-header{background:#ffcc80;position:sticky;top:0;z-index:10;border-bottom:1px solid #f2e0c8;}
+  footer.site-footer{background:#ffcc80;margin-top:2rem;}
+  footer.site-footer .container{padding:1rem 1rem;text-align:center;color:#333;}
+  .btn{background:var(--accent);color:#fff;padding:.8rem 1.3rem;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block}
+  .btn:hover{background:var(--accent-dark)}
+  .section{padding:2rem 0}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid #f2e0c8;border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+  .hero{background:linear-gradient(120deg,#ffe4bd,#fff3e0);padding:3rem 1rem;text-align:center}
+  .hero h2{color:#e65100;margin:0 0 .5rem}
+  .lead{color:var(--muted)}
+  .pill{display:inline-block;border:2px solid #d84315;color:#d84315;padding:.4rem .75rem;border-radius:999px;font-weight:700;text-decoration:none}
+  .pill:hover{background:#ffe0b2}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="logo" style="display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;">
+      <img src="https://pbs.twimg.com/profile_images/1428651796981960706/tcr78MMc_400x400.jpg" alt="HSS Logo" style="width:64px;height:64px;border-radius:50%;"/>
+      <div class="logo-text" style="text-align:center;">
+        <h1 style="margin:0;color:#d84315;font-size:1.6rem;">Hindu Swayamsevak Sangh Thailand</h1>
+        <p style="margin:0;color:#6b7280;">हिंदू स्वयंसेवक संघ | ฮินดูสวายัมเสวกสังฆ์</p>
+      </div>
+    </div>
+    <nav class="navbar" style="margin-top:12px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <a href="index.html" style="text-decoration:none;color:#bf360c;font-weight:700;">Home</a>
+      <a href="about.html" style="text-decoration:none;color:#bf360c;font-weight:700;">About Us</a>
+      <a href="activities.html" style="text-decoration:none;color:#bf360c;font-weight:700;">Activities</a>
+      <a href="gallery.html" style="text-decoration:none;color:#bf360c;font-weight:700;">Gallery</a>
+      <a href="contact.html" style="text-decoration:none;color:#bf360c;font-weight:700;">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="section">
+  <div class="container">
+    <h2 style="color:#e65100;margin:0 0 6px">Programs & Activities</h2>
+    <p class="lead">Highlights from our regular calendar. Many activities are open—feel free to join!</p>
+    <div class="cards">
+      <div class="card"><h4>Weekly Shakhas</h4><p>Physical drills, surya namaskar, khel (games), and bauddhik (discussions).</p></div>
+      <div class="card"><h4>Bala Gokulam</h4><p>Fun sessions for children—stories, arts, bhajans, and language.</p></div>
+      <div class="card"><h4>Festivals</h4><p>Cultural performances, puja, and community bonding during key festivals.</p></div>
+      <div class="card"><h4>Leadership Camps</h4><p>Outdoor camps and workshops that build teamwork and initiative.</p></div>
+      <div class="card"><h4>Seva Projects</h4><p>From relief efforts to education drives—hands-on opportunities to serve.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" style="background:#fff3e0;">
+  <div class="container">
+    <h3 style="color:#bf360c;margin:0 0 10px">Upcoming Focus</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Youth Development</h4>
+        <p>Expanding leadership modules for high-school and university students.</p>
+        <a class="pill" href="mailto:hssthai@gmail.com?subject=Youth%20Leadership%20Programs&body=Namaste%2C%0D%0A%0D%0AI%27m%20interested%20in%20youth%20leadership%20programs.%0D%0AAge%20group%3A%20_____%0D%0ALocation%3A%20_____%0D%0AContact%3A%20_____%0D%0A%0D%0AThank%20you.">Join youth modules</a>
+      </div>
+      <div class="card">
+        <h4>Community Outreach</h4>
+        <p>Collaborations with schools/temples for cultural awareness programs.</p>
+        <a class="pill" href="mailto:hssthai@gmail.com?subject=School%2FTemple%20Collaboration&body=Namaste%2C%0D%0A%0D%0AWe%20would%20like%20to%20host%20a%20cultural%20program%20with%20HSS.%0D%0AOrganization%3A%20_____%0D%0AProposed%20date%3A%20_____%0D%0AContact%3A%20_____%0D%0A%0D%0AThank%20you.">Plan a program</a>
+      </div>
+      <div class="card">
+        <h4>Seva Partnerships</h4>
+        <p>Working with local NGOs to scale impact.</p>
+        <a class="pill" href="mailto:hssthai@gmail.com?subject=Seva%20Partnership&body=Namaste%2C%0D%0A%0D%0AWe%27d%20like%20to%20explore%20a%20seva%20partnership.%0D%0AOrganization%3A%20_____%0D%0AFocus%20area%3A%20_____%0D%0AContact%3A%20_____%0D%0A%0D%0AThank%20you.">Explore partnership</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer"><div class="container">© 2025 HSS Thailand. All Rights Reserved.</div></footer>
+</body>
+</html>

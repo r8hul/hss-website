@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HSS Thailand - Home</title>
+  
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+<style>
+  :root{
+    --bg:#fffaf3; --accent:#f57c00; --accent-dark:#e65100; --ink:#333; --card:#fff; --muted:#6b7280;
+    --radius:14px; --shadow:0 8px 24px rgba(0,0,0,.08);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);}
+  .container{max-width:1100px;margin:auto;padding:1.75rem 1rem;}
+  header.site-header{background:#ffcc80;position:sticky;top:0;z-index:10;border-bottom:1px solid #f2e0c8;}
+  footer.site-footer{background:#ffcc80;margin-top:2rem;}
+  footer.site-footer .container{padding:1rem 1rem;text-align:center;color:#333;}
+  .btn{background:var(--accent);color:#fff;padding:.8rem 1.3rem;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block}
+  .btn:hover{background:var(--accent-dark)}
+  .section{padding:2rem 0}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid #f2e0c8;border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+  .hero{background:linear-gradient(120deg,#ffe4bd,#fff3e0);padding:3rem 1rem;text-align:center}
+  .hero h2{color:#e65100;margin:0 0 .5rem}
+  .lead{color:var(--muted)}
+  .pill{display:inline-block;border:2px solid #d84315;color:#d84315;padding:.4rem .75rem;border-radius:999px;font-weight:700;text-decoration:none}
+  .pill:hover{background:#ffe0b2}
+</style>
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="logo" style="display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;">
+      <img src="https://pbs.twimg.com/profile_images/1428651796981960706/tcr78MMc_400x400.jpg" alt="HSS Logo" style="width:64px;height:64px;border-radius:50%;"/>
+      <div class="logo-text" style="text-align:center;">
+        <h1 style="margin:0;color:#d84315;font-size:1.6rem;">Hindu Swayamsevak Sangh Thailand</h1>
+        <p style="margin:0;color:#6b7280;">हिंदू स्वयंसेवक संघ | ฮินดูสวายัมเสวกสังฆ์</p>
+      </div>
+    </div>
+    <nav class="navbar" style="margin-top:12px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <a href="index.html" style="text-decoration:none;color:#bf360c;font-weight:700;">Home</a>
+      <a href="about.html" style="text-decoration:none;color:#bf360c;font-weight:700;">About Us</a>
+      <a href="activities.html" style="text-decoration:none;color:#bf360c;font-weight:700;">Activities</a>
+      <a href="gallery.html" style="text-decoration:none;color:#bf360c;font-weight:700;">Gallery</a>
+      <a href="contact.html" style="text-decoration:none;color:#bf360c;font-weight:700;">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>Building Strong Values, Stronger Community</h2>
+    <p class="lead">Promoting Hindu culture and selfless service through unity, discipline, and dedication in Thailand.</p>
+    <a class="btn" href="about.html">Learn More</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h3 style="color:#bf360c;margin:0 0 10px">What We Do</h3>
+    <p class="lead">Regular shakhas, youth leadership, service projects, and cultural celebrations that strengthen character and community.</p>
+    <div class="cards">
+      <div class="card"><h4>Shakhas</h4><p>Weekly gatherings with exercises, games, geet/shlokas, and discussions to build discipline and camaraderie.</p></div>
+      <div class="card"><h4>Seva</h4><p>Food drives, education support, and disaster relief—volunteer opportunities throughout the year.</p></div>
+      <div class="card"><h4>Culture</h4><p>Diwali, Holi, Raksha Bandhan and more—programs that celebrate our heritage with the wider Thai community.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" style="background:#fff3e0;">
+  <div class="container">
+    <h3 style="color:#bf360c;margin:0 0 10px">Get Involved</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Join a Shakha</h4>
+        <p>Open to all ages. Find a weekly shakha near you and experience the spirit of Sewa and Sangh.</p>
+        <a class="pill" href="mailto:hssthai@gmail.com?subject=Join%20a%20Shakha%20-%20Location%20Request&body=Namaste%2C%0D%0A%0D%0AI%27d%20like%20to%20join%20a%20shakha.%20My%20area%20is%3A%20_____%20%0D%0APreferred%20day%2Ftime%3A%20_____%20%0D%0AContact%20number%3A%20_____%0D%0A%0D%0AThank%20you.">Request timings</a>
+      </div>
+      <div class="card">
+        <h4>Volunteer</h4>
+        <p>Offer your time or skills for upcoming seva activities and events.</p>
+        <a class="pill" href="mailto:hssthai@gmail.com?subject=Volunteer%20with%20HSS%20Thailand&body=Namaste%2C%0D%0A%0D%0AI%27m%20interested%20in%20volunteering.%20Skills%20I%20can%20offer%3A%20_____%0D%0ADays%20available%3A%20_____%0D%0AContact%20number%3A%20_____%0D%0A%0D%0AThank%20you.">Sign up to volunteer</a>
+      </div>
+      <div class="card">
+        <h4>Partner with Us</h4>
+        <p>Schools, temples, and community groups—invite us to collaborate on cultural or service initiatives.</p>
+        <a class="pill" href="mailto:hssthai@gmail.com?subject=Partnership%20Enquiry&body=Namaste%2C%0D%0A%0D%0AWe%27d%20like%20to%20partner%20with%20HSS%20Thailand.%20Organization%3A%20_____%0D%0AProposed%20activity%2Fevent%3A%20_____%0D%0AProposed%20date%3A%20_____%0D%0AContact%20number%3A%20_____%0D%0A%0D%0AThank%20you.">Propose a collaboration</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer"><div class="container">© 2025 HSS Thailand. All Rights Reserved.</div></footer>
+</body>
+</html>
