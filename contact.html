@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HSS Thailand - Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --brand-bg: #ffcc80;
+      --brand-dark: #d84315;
+      --ink: #333;
+      --card: #fff;
+      --muted: #6b7280;
+      --ring: #f57c00;
+      --radius: 14px;
+      --shadow: 0 6px 20px rgba(0,0,0,.08);
+      --shadow-lg: 0 12px 28px rgba(0,0,0,.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fffaf3;
+      color: var(--ink);
+    }
+    header {
+      background-color: var(--brand-bg);
+      padding: 1rem 0;
+      text-align: center;
+    }
+    .logo { display:flex; justify-content:center; align-items:center; gap:1rem; flex-wrap:wrap; }
+    .logo img { width: 60px; height:auto; }
+    .logo-text h1 { margin:0; font-size:1.5rem; color: var(--brand-dark);}
+    .logo-text p { margin:0; font-size:.95rem; }
+    nav.navbar { margin-top:.75rem; display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; }
+    nav.navbar a { text-decoration:none; color:#bf360c; font-weight:600; }
+    footer { text-align:center; padding:1rem; background-color: var(--brand-bg); margin-top:2rem; }
+
+    .container { max-width: 1100px; margin:auto; padding: 2rem 1rem; }
+    h2 { font-size: 2rem; color:#e65100; margin-bottom: .25rem; }
+    .lead { color: var(--muted); margin-bottom: 1.75rem; }
+
+    /* New layout */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .9fr;
+      gap: 22px;
+    }
+    @media (max-width: 860px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid #f2e0c8;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .card h3 { margin: 0 0 10px; color: #bf360c; }
+
+    /* Form */
+    form#contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    form#contact-form input[type="text"],
+    form#contact-form input[type="email"],
+    form#contact-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid #f1d2ae;
+      border-radius: 10px;
+      font: inherit;
+      outline: none;
+      transition: border-color 160ms ease, box-shadow 160ms ease;
+      background: #fffdfa;
+    }
+    form#contact-form textarea { grid-column: 1 / -1; min-height: 120px; resize: vertical; }
+    form#contact-form input:focus,
+    form#contact-form textarea:focus { border-color: var(--ring); box-shadow: 0 0 0 4px rgba(245,124,0,.12); }
+    .actions { grid-column: 1 / -1; display:flex; gap:10px; align-items:center; }
+    button.btn {
+      background: #f57c00;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+      box-shadow: var(--shadow);
+    }
+    button.btn:hover { background:#e86f00; transform: translateY(-1px); box-shadow: var(--shadow-lg);}
+    #form-response { color: #2e7d32; font-weight:600; }
+
+    /* Details + map */
+    .stack { display:flex; flex-direction:column; gap: 14px; }
+    .detail { display:flex; gap:10px; align-items:flex-start; }
+    .detail b { color:#bf360c; min-width: 95px; }
+    .map-card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid #f2e0c8;
+      background: #fff;
+    }
+    .map-card iframe {
+      width: 100%;
+      height: 260px;
+      display:block;
+      border: 0;
+    }
+    .map-overlay {
+      position:absolute; inset:0;
+      display:block; text-indent:-9999px;
+    }
+    .map-footer {
+      display:flex; justify-content:space-between; align-items:center;
+      padding: 10px 12px; background:#fffaf3; border-top:1px solid #f2e0c8;
+    }
+    .map-footer .addr { font-size:.95rem; color:#444; }
+    .map-footer a.btn-secondary {
+      border:2px solid #d84315; color:#d84315; padding:8px 12px; border-radius:10px; text-decoration:none; font-weight:700;
+    }
+    .map-footer a.btn-secondary:hover { background:#ffe0b2; }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <div class="logo">
+      <img src="https://pbs.twimg.com/profile_images/1428651796981960706/tcr78MMc_400x400.jpg" alt="HSS Logo" />
+      <div class="logo-text">
+        <h1>Hindu Swayamsevak Sangh Thailand</h1>
+        <p>हिंदू स्वयंसेवक संघ | ฮินดูสวายัมเสวกสังฆ์</p>
+      </div>
+    </div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="activities.html">Activities</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <h2>Contact Us</h2>
+  <p class="lead">Have a question or want to get involved? Send us a message or reach out directly—we’d love to hear from you.</p>
+
+  <div class="contact-grid">
+    <!-- Left: Form -->
+    <div class="card">
+      <h3>Send us a message</h3>
+      <form action="https://formspree.io/f/mldnjrdr" method="POST" id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <div class="actions">
+          <button type="submit" class="btn">Send Message</button>
+          <span id="form-response" aria-live="polite"></span>
+        </div>
+      </form>
+    </div>
+
+    <!-- Right: Details + Map -->
+    <div class="stack">
+      <div class="card">
+        <h3>Contact Details</h3>
+        <div class="detail"><b>Email</b><span><a href="mailto:hssthai@gmail.com">hssthai@gmail.com</a></span></div>
+        <div class="detail"><b>Facebook</b><span>Hindu Swayamsevak Sangh Thailand</span></div>
+        <div class="detail"><b>Location</b><span>46 Soi On Nut 46, On Nut, Suan Luang, Bangkok 10250</span></div>
+      </div>
+
+      <div class="map-card">
+        <iframe src="https://www.google.com/maps?q=46+Soi+On+Nut+46%2C+On+Nut%2C+Suan+Luang%2C+Bangkok+10250&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Make whole map clickable -->
+        <a class="map-overlay" href="https://maps.app.goo.gl/M37BCySagFgvNqCv9" target="_blank" rel="noopener" aria-label="Open location in Google Maps">Open in Maps</a>
+        <div class="map-footer">
+          <div class="addr">46 Soi On Nut 46, On Nut, Suan Luang, Bangkok 10250</div>
+          <a class="btn-secondary" href="https://maps.app.goo.gl/M37BCySagFgvNqCv9" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 HSS Thailand. All Rights Reserved.</p>
+    <p><a href="mailto:hssthai@gmail.com">hssthai@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const data = new FormData(form);
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  });
+  const msg = document.getElementById("form-response");
+  if (response.ok) {
+    msg.textContent = "Thank you! Your message has been sent.";
+    msg.style.color = "#2e7d32";
+    form.reset();
+  } else {
+    msg.textContent = "Oops! There was a problem submitting your form.";
+    msg.style.color = "#b91c1c";
+  }
+});
+</script>
+</body>
+</html>
