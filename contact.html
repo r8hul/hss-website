@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — HSS Thailand</title>
+  <meta name="description" content="Get in touch with HSS Thailand — join a shakha, volunteer for seva, propose a partnership, or ask a question." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><img src="https://pbs.twimg.com/profile_images/1428651796981960706/tcr78MMc_400x400.jpg" alt="HSS Thailand" /><div class="logo-text"><span class="name">HSS Thailand</span><span class="tagline">Hindu Swayamsevak Sangh</span></div></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="navbar" id="navbar">
+      <div class="nav-item"><a href="index.html">Home</a></div>
+      <div class="nav-item"><button class="nav-link">About <span class="nav-arrow">▼</span></button><div class="dropdown"><div class="dropdown-inner"><a href="about.html"><span class="di">🏛️</span> About HSS Thailand</a><a href="about.html#history"><span class="di">📜</span> Our History</a><a href="about.html#values"><span class="di">⭐</span> Guiding Values</a><a href="about.html#global"><span class="di">🌏</span> HSS Worldwide</a></div></div></div>
+      <div class="nav-item"><button class="nav-link">Activities <span class="nav-arrow">▼</span></button><div class="dropdown"><div class="dropdown-inner"><a href="shakha.html"><span class="di">🪔</span> Shakhas in Bangkok</a><a href="seva.html"><span class="di">🤝</span> Seva &amp; Service</a><a href="activities.html"><span class="di">🎉</span> Festivals &amp; Events</a><a href="activities.html#youth"><span class="di">🌱</span> Youth Programmes</a></div></div></div>
+      <div class="nav-item"><a href="gallery.html">Gallery</a></div>
+      <div class="nav-item"><a href="contact.html" class="active">Contact</a></div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero page-hero" style="text-align:center;">
+  <div class="hero-badge">Get in Touch</div>
+  <h1>Contact <span>Us</span></h1>
+  <p>Have a question, want to join, or would like to collaborate? We would love to hear from you.</p>
+</section>
+
+<!-- QUICK LINKS -->
+<section class="section section-alt" style="padding:2.5rem 0;">
+  <div class="container">
+    <div class="section-head centered" style="margin-bottom:1.5rem;">
+      <span class="section-label">Quick Enquiries</span>
+      <h2 class="section-title" style="font-size:1.75rem;">What brings you here?</h2>
+    </div>
+    <div class="cards-grid-4">
+      <a href="shakha.html" class="card" style="text-align:center;cursor:pointer;"><div class="card-icon">🪔</div><h4>Join a Shakha</h4><p style="font-size:0.85rem;">Find a shakha near you and start your journey with HSS.</p></a>
+      <a href="seva.html" class="card" style="text-align:center;cursor:pointer;"><div class="card-icon">🤝</div><h4>Volunteer for Seva</h4><p style="font-size:0.85rem;">Give your time and skills for our community service work.</p></a>
+      <a href="activities.html" class="card" style="text-align:center;cursor:pointer;"><div class="card-icon">🎉</div><h4>Events &amp; Festivals</h4><p style="font-size:0.85rem;">Learn about upcoming cultural events and how to attend.</p></a>
+      <a href="mailto:hssthai@gmail.com?subject=Partnership%20Enquiry" class="card" style="text-align:center;cursor:pointer;"><div class="card-icon">🏛️</div><h4>Partner With Us</h4><p style="font-size:0.85rem;">Collaborate with HSS Thailand on cultural or service initiatives.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTACT -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- FORM -->
+      <div class="card">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;margin-bottom:0.25rem;">Send Us a Message</h3>
+        <p style="font-size:0.88rem;color:var(--muted);margin-bottom:1.5rem;">We typically respond within 1–2 business days. For urgent matters, please reach out on Facebook.</p>
+        <form action="https://formspree.io/f/mldnjrdr" method="POST" id="contactForm">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+66 xx xxx xxxx" />
+            </div>
+            <div class="form-field">
+              <label for="subject">Enquiry Type</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic...</option>
+                <option value="Join a Shakha">Join a Shakha</option>
+                <option value="Volunteer for Seva">Volunteer for Seva</option>
+                <option value="Festival / Event">Festival / Event</option>
+                <option value="Partnership">Partnership / Collaboration</option>
+                <option value="Bala Gokulam">Bala Gokulam (Children)</option>
+                <option value="Media / Press">Media / Press</option>
+                <option value="General Enquiry">General Enquiry</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help, or share a little about yourself..." required></textarea>
+            </div>
+          </div>
+          <div style="margin-top:1rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+            <button type="submit" class="btn">Send Message</button>
+            <span id="formMsg" aria-live="polite" style="font-size:0.88rem;font-weight:600;"></span>
+          </div>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+        <div class="card">
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;margin-bottom:1.25rem;">Contact Details</h3>
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+            <div class="detail-item"><div class="detail-icon">✉️</div><div><div class="d-label">Email</div><div class="d-value"><a href="mailto:hssthai@gmail.com" style="color:var(--saffron);">hssthai@gmail.com</a></div></div></div>
+            <div class="detail-item"><div class="detail-icon">📘</div><div><div class="d-label">Facebook</div><div class="d-value"><a href="https://www.facebook.com/profile.php?id=100067159560733" target="_blank" rel="noopener" style="color:var(--saffron);">Hindu Swayamsevak Sangh Thailand</a></div></div></div>
+            <div class="detail-item"><div class="detail-icon">📍</div><div><div class="d-label">Main Location</div><div class="d-value">46 Soi On Nut 46, On Nut,<br>Suan Luang, Bangkok 10250</div></div></div>
+            <div class="detail-item"><div class="detail-icon">🕖</div><div><div class="d-label">Main Shakha</div><div class="d-value">Sundays · 7:00 AM – 8:30 AM<br><span style="font-size:0.82rem;color:var(--muted);">Other shakhas — <a href="shakha.html" style="color:var(--saffron);">see full schedule</a></span></div></div></div>
+          </div>
+        </div>
+
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps?q=46+Soi+On+Nut+46%2C+On+Nut%2C+Suan+Luang%2C+Bangkok+10250&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="HSS Thailand map"></iframe>
+          <div class="map-footer">
+            <span class="addr">46 Soi On Nut 46, Bangkok</span>
+            <a href="https://maps.app.goo.gl/M37BCySagFgvNqCv9" target="_blank" rel="noopener" class="pill" style="margin-top:0;font-size:0.78rem;">Open in Maps →</a>
+          </div>
+        </div>
+
+        <div class="card" style="background:var(--saffron-pale);border-color:rgba(212,82,26,0.2);">
+          <h4 style="font-size:1rem;margin-bottom:0.5rem;">🙏 Namaste!</h4>
+          <p style="font-size:0.87rem;color:var(--ink-light);">We are a volunteer-run organisation. Please allow 1–2 days for a response. We look forward to welcoming you into our community.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>We Look Forward to Hearing from You</h2>
+  <p>Every enquiry is welcome — big or small. There are no wrong questions.</p>
+  <div class="cta-buttons">
+    <a href="https://www.facebook.com/profile.php?id=100067159560733" target="_blank" rel="noopener" class="btn">Message on Facebook</a>
+    <a href="shakha.html" class="btn btn-ghost">Find a Shakha</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand"><span class="f-name">Hindu Swayamsevak Sangh Thailand</span><span class="f-tagline">हिंदू स्वयंसेवक संघ · ฮินดูสวายัมเสวกสังฆ์</span><p>A global Hindu cultural and service organisation dedicated to character building, community service, and cultural preservation.</p></div>
+    <div class="footer-col"><h5>About</h5><a href="about.html">About HSS Thailand</a><a href="about.html#history">Our History</a><a href="about.html#values">Our Values</a><a href="about.html#global">HSS Worldwide</a></div>
+    <div class="footer-col"><h5>Activities</h5><a href="shakha.html">Shakhas in Bangkok</a><a href="seva.html">Seva &amp; Service</a><a href="activities.html">Festivals &amp; Events</a><a href="activities.html#youth">Youth Programmes</a></div>
+    <div class="footer-col"><h5>Connect</h5><a href="contact.html">Contact Us</a><a href="gallery.html">Photo Gallery</a><a href="https://www.facebook.com/profile.php?id=100067159560733" target="_blank" rel="noopener">Facebook</a><a href="mailto:hssthai@gmail.com">hssthai@gmail.com</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Hindu Swayamsevak Sangh Thailand. All rights reserved.</span><span><a href="mailto:hssthai@gmail.com">hssthai@gmail.com</a></span></div>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const msg = document.getElementById('formMsg');
+  msg.textContent = 'Sending…'; msg.style.color = 'var(--muted)';
+  try {
+    const res = await fetch(this.action, { method: 'POST', body: new FormData(this), headers: { 'Accept': 'application/json' } });
+    if (res.ok) { msg.textContent = '✓ Sent! We\'ll be in touch soon.'; msg.style.color = '#2e7d32'; this.reset(); }
+    else throw new Error();
+  } catch { msg.textContent = 'Something went wrong. Please email us directly.'; msg.style.color = '#b91c1c'; }
+});
+const toggle = document.getElementById('navToggle');
+const navbar = document.getElementById('navbar');
+toggle.addEventListener('click', () => navbar.classList.toggle('open'));
+document.querySelectorAll('.nav-item .nav-link').forEach(btn => {
+  btn.addEventListener('click', () => { if (window.innerWidth <= 720) btn.closest('.nav-item').classList.toggle('mob-open'); });
+});
+</script>
+</body>
+</html>
