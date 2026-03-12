@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — HSS Thailand</title>
+  <meta name="description" content="Learn about Hindu Swayamsevak Sangh Thailand — our mission, values, and community." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="https://pbs.twimg.com/profile_images/1428651796981960706/tcr78MMc_400x400.jpg" alt="HSS Thailand Logo" />
+      <div class="logo-text">
+        <span class="name">HSS Thailand</span>
+        <span class="tagline">Hindu Swayamsevak Sangh</span>
+      </div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="navbar" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="activities.html">Activities</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="hero" style="padding: 3.5rem 1.5rem;">
+  <div class="hero-badge">Our Story</div>
+  <h2>About <span>HSS Thailand</span></h2>
+  <p>A cultural and service organisation inspired by Sanatana Dharma — nurturing character, leadership, and community spirit.</p>
+</section>
+
+<!-- MISSION -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">Who We Are</span>
+      <h2 class="section-title">Our Mission</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">To cultivate confident individuals rooted in dharma who serve society selflessly and work for harmony across all communities in Thailand.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h4>Our Mission</h4>
+        <p>To cultivate confident individuals rooted in dharma who serve society selflessly and work for harmony.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📚</div>
+        <h4>Our Approach</h4>
+        <p>Shakha-based learning that blends physical fitness, intellectual growth, and cultural pride.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌏</div>
+        <h4>Our Community</h4>
+        <p>Families, students, and professionals from across Thailand connected through values and seva.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDING VALUES -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-label">What We Stand For</span>
+      <h2 class="section-title">Guiding Values</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="card-icon">🙏</div>
+        <h4>Seva (Service)</h4>
+        <p>Serving without expectation — uplifting society through action.</p>
+        <a class="pill" href="mailto:hssthai@gmail.com?subject=Seva%20Opportunities&body=Namaste%2C%0D%0A%0D%0AI%20would%20like%20to%20participate%20in%20seva%20activities.%20Skills%2Fresources%3A%20_____%0D%0AAvailability%3A%20_____%0D%0AContact%3A%20_____%0D%0A%0D%0AThank%20you.">Ask about Seva →</a>
+      </div>
+      <div class="value-card">
+        <div class="card-icon">⭐</div>
+        <h4>Sanskars (Values)</h4>
+        <p>Instilling discipline, respect, and responsibility through practice.</p>
+        <a class="pill" href="mailto:hssthai@gmail.com?subject=Programs%20for%20Children%2FYouth&body=Namaste%2C%0D%0A%0D%0AWe%20are%20interested%20in%20value-based%20programs%20for%20children%20or%20youth.%0D%0AAge%20group%3A%20_____%0D%0ALocation%3A%20_____%0D%0AContact%3A%20_____%0D%0A%0D%0AThank%20you.">Programs for Youth →</a>
+      </div>
+      <div class="value-card">
+        <div class="card-icon">🤝</div>
+        <h4>Sampark (Connect)</h4>
+        <p>Bringing people together — building unity across cultures and generations.</p>
+        <a class="pill" href="mailto:hssthai@gmail.com?subject=Community%20Outreach%20-%20Invite%20HSS&body=Namaste%2C%0D%0A%0D%0AWe%27d%20like%20to%20invite%20HSS%20Thailand%20for%20an%20event%20or%20talk.%0D%0AOrganization%3A%20_____%0D%0AEvent%20date%3A%20_____%0D%0AContact%3A%20_____%0D%0A%0D%0AThank%20you.">Invite HSS Thailand →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <h2>Be Part of Our Community</h2>
+  <p>Open to everyone who shares a love for service, culture, and community.</p>
+  <div class="cta-buttons">
+    <a href="contact.html" class="btn">Get in Touch</a>
+    <a href="activities.html" class="btn btn-ghost">See Our Activities</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2025 Hindu Swayamsevak Sangh Thailand. All rights reserved.</p>
+    <p><a href="mailto:hssthai@gmail.com">hssthai@gmail.com</a></p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navbar').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
